@@ -1,5 +1,5 @@
 <%=form_tag blogs_path, method: "post" do%>
-  <%= text_field_tag :body,"" %>
+  <%= text_field_tag :body,"",class: "body-field", placeholder: "投稿しよう" %>
   <%= submit_tag "投稿する" %>
 <% end %>
 
@@ -9,8 +9,8 @@
   <% @blogs.each do |blog| %>
     <li class="blog">
       <p>
-        <span class="body" >
           <%= blog.id %>:
+          <span class="body" >
           <%= link_to blog.body, blog_path(blog.id) %>
         </span>
       </p>
