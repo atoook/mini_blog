@@ -1,9 +1,11 @@
 <%=form_tag blogs_path, method: "post" do%>
-  <%= text_area_tag :body,"" %>
+  <%= text_field_tag :body,"" %>
   <%= submit_tag "投稿する" %>
 <% end %>
+
 <hr>
-<ul class="blogs" style="list-style:none;">
+
+<ul class="blogs" >
   <% @blogs.each do |blog| %>
     <li class="blog">
       <p>
@@ -15,11 +17,11 @@
       <p>
         <span class="like" >
           <%= link_to 'いいね！', like_index_path(blog.id), method: :post %>:
-          <%= blog.like %>
+          <%= blog.like %> |
         </span>
         <span class="comment" >
           コメント数:
-          <%= blog.replies.count %>
+          <%= blog.replies.count %> |
         </span>
         <span class="post-date">
           投稿日時:<%= blog.created_at.strftime("%Y-%m-%d %H:%M:%S") %>
