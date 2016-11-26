@@ -1,0 +1,30 @@
+<%=form_tag blogs_path, method: "post" do%>
+  <%= text_area_tag :body,"" %>
+  <%= submit_tag "投稿する" %>
+<% end %>
+<hr>
+<ul style="list-style:none;">
+  <% @blogs.each do |blog| %>
+    <li>
+      <p>
+        <span >
+          <%= blog.id %>:
+          <%= link_to blog.body, blog_path(blog.id) %>
+        </span>
+      </p>
+      <p>
+        <span>
+          <%= link_to 'いいね！', like_index_path(blog.id), method: :post %>:
+          <%= blog.like %>
+        </span>
+        <span>
+          コメント数:
+          <%= blog.replies.count %>
+        </span>
+        <span>
+          投稿日時:<%= blog.created_at.strftime("%Y-%m-%d %H:%M:%S") %>
+        </span>
+      </p>
+    </li>
+  <% end %>
+</ul>
