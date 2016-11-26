@@ -23,7 +23,7 @@
 
 
 <%= form_tag replies_path method: "post" do %>
-  <%= text_field_tag :comment,"" %>
+  <%= text_field_tag :comment,"", class: "comment-field", placeholder: "コメントしよう"  %>
   <%= submit_tag "コメントする" %>
 <% end %>
 
