@@ -22,7 +22,7 @@
 </div>
 
 
-<%= form_tag replies_path, method: "post" do %>
+<%= form_tag replies_path method: "post" do %>
   <%= text_field_tag :comment,"" %>
   <%= submit_tag "コメントする" %>
 <% end %>
