@@ -3,25 +3,25 @@
   <%= submit_tag "投稿する" %>
 <% end %>
 <hr>
-<ul style="list-style:none;">
+<ul class="blogs" style="list-style:none;">
   <% @blogs.each do |blog| %>
-    <li>
+    <li class="blog">
       <p>
-        <span >
+        <span class="body" >
           <%= blog.id %>:
           <%= link_to blog.body, blog_path(blog.id) %>
         </span>
       </p>
       <p>
-        <span>
+        <span class="like" >
           <%= link_to 'いいね！', like_index_path(blog.id), method: :post %>:
           <%= blog.like %>
         </span>
-        <span>
+        <span class="comment" >
           コメント数:
           <%= blog.replies.count %>
         </span>
-        <span>
+        <span class="post-date">
           投稿日時:<%= blog.created_at.strftime("%Y-%m-%d %H:%M:%S") %>
         </span>
       </p>
