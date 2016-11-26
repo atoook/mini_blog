@@ -1,0 +1,25 @@
+<%= link_to "戻る", blogs_path %>
+<br>
+<span class="blog">
+  <%= @blog.id %>:
+  <%= @blog.body %>
+</span>
+<span class="post-date" >
+  <%= @blog.created_at.strftime("%Y-%m-%d %H:%M:%S") %>|
+</span>
+<span class="like">
+  <%= link_to 'いいね！', like_show_path(@blog.id), method: :post %>:
+  <%= @blog.like %>
+</span>
+
+
+<%= form_tag replies_path, method: "post" do %>
+  <%= text_area_tag :comment,"" %>
+  <%= submit_tag "コメントする" %>
+<% end %>
+
+<hr>
+
+<ul class="replies" style="list-style:none;">
+  <%= render @replies %>
+</ul>
