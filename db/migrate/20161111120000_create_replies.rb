@@ -1,4 +1,4 @@
-class CreateReplies < ActiveRecord::Migration[5.0]
+class CreateReplies < ActiveRecord::Migration
   def change
     create_table :replies do |t|
       t.integer :blog_id, null: false, default: 0, comment: 'ブログID'

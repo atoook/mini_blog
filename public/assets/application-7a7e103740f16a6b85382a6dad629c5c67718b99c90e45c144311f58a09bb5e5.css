@@ -1,0 +1,83 @@
+/* line 2, /Users/atok/workspace/blog_test/mini_blog/app/assets/stylesheets/blogs.scss */
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 7, /Users/atok/workspace/blog_test/mini_blog/app/assets/stylesheets/blogs.scss */
+.blogs {
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+/* line 14, /Users/atok/workspace/blog_test/mini_blog/app/assets/stylesheets/blogs.scss */
+li {
+  padding: 10px 5px;
+  border-bottom: 1px solid #CCC;
+  margin-top: -1px;
+}
+
+/* line 20, /Users/atok/workspace/blog_test/mini_blog/app/assets/stylesheets/blogs.scss */
+.replies {
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+/* line 27, /Users/atok/workspace/blog_test/mini_blog/app/assets/stylesheets/blogs.scss */
+.like {
+  font-size: 0.9em;
+}
+
+/* line 30, /Users/atok/workspace/blog_test/mini_blog/app/assets/stylesheets/blogs.scss */
+.comment {
+  font-size: 0.9em;
+}
+
+/* line 34, /Users/atok/workspace/blog_test/mini_blog/app/assets/stylesheets/blogs.scss */
+.post-date {
+  color: #999;
+  font-size: 0.9em;
+}
+
+/* line 39, /Users/atok/workspace/blog_test/mini_blog/app/assets/stylesheets/blogs.scss */
+.blog-detail {
+  border-top: 1px solid #CCC;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+/* line 47, /Users/atok/workspace/blog_test/mini_blog/app/assets/stylesheets/blogs.scss */
+.blog-show {
+  font-weight: bold;
+}
+
+/* line 51, /Users/atok/workspace/blog_test/mini_blog/app/assets/stylesheets/blogs.scss */
+.blog-show {
+  font-size: 0.9em;
+}
+/* line 1, /Users/atok/workspace/blog_test/mini_blog/app/assets/stylesheets/replies.scss */
+.re-comment {
+  font-weight: bold;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
